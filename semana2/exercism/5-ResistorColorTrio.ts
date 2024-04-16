@@ -1,6 +1,7 @@
 export function decodedResistorValue(col : string[]): string | undefined{
     let [col1,col2,col3]=col
-     let num3 = COLORS.indexOf(col3);let num4 = Number(String(COLORS.indexOf(col1)) + String(COLORS.indexOf(col2)))*(10**num3)
+     let num3 = COLORS.indexOf(col3);
+     let num4 = Number(String(COLORS.indexOf(col1)) + String(COLORS.indexOf(col2)))*(10**num3)
      let num5=num4; let count = 0;
      String(num5).split("").map((num) => {
          if (num === "0") {count++;}
