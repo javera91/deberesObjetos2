@@ -2,13 +2,11 @@
 
 
 ***6-Leap***
-El código define una función llamada 'decodedValue' que toma un array de strings 'colors' y da como resultado un número basado en la codificación de colores.
+Determina si un año dado es bisiesto o no. La función toma un parámetro de tipo número que representa el año y devuelve un valor booleano que indica si el año es bisiesto o no.
 
-Para ello utiliza el método indexOf aplicado a un Array de Strings llamado 'COLORS' con el objeto de que cuando el usuario ingrese el primer nombre de un color en inglés, le dé como resultado el índice de dicho color y lo multiplica x10 y cuando se ingrese el segundo nombre sume el índice resultante al valor ya multiplicado x10.
+La lógica de la función se basa en las reglas para determinar si un año es bisiesto. Un año es bisiesto si es divisible entre 4, excepto en el caso de los años que son divisibles entre 100 pero no entre 400. La expresión utilizada en el código verifica estas condiciones y devuelve true si el año es bisiesto y false si no lo es.
 
 ***7-RNA Transcription***
-El código define una función llamada 'decodedResistorValue' que toma un array de tres strings 'col' que representan los colores de las bandas de un resistor. Con el objeto de dar como resultado una cadena de texto que representa el valor de dicho resistor.
+Realiza la transcripción de una secuencia de ADN a ARN. La función toma una cadena de ADN como parámetro y devuelve la secuencia correspondiente de ARN.
 
-Para ello *primero*, desestructura el array 'col' en tres variables, y se representa las bandas del resistor con 'col1', 'col2' y 'col3'. *Segundo*, en la línea de código 3 se obtiene el índice del color en 'col3' que será en representación al exponente 10. *Tercero*, en la línea de código 4 se obtiene el valor de la resistencia en ohms, para ello se convierte los índices de 'col1' y 'col2' en strings, los concatena, los convierte en número y los multiplica por 10 elevado a la potencia 'num3'. *Cuarto*, en las líneas de código 5-8 de manera breve convierte 'num5' en una cadena de texto, luego la divide en caracteres individuales y para cada caracter, si es "0", incrementa count.
-
-Por último, todo ello trabaja en base de un array de strings llamado 'COLORS'.
+La lógica de la función se basa en la correspondencia entre las bases nitrogenadas del ADN (G, C, T, A) y las del ARN (C, G, A, U). La función recorre la cadena de ADN y realiza la transcripción de cada base según las reglas establecidas. Si la base de ADN es 'G', se transcribe a 'C'; si es 'C', se transcribe a 'G'; si es 'T', se transcribe a 'A'; y si es 'A', se transcribe a 'U'. Además, la función maneja el caso de una entrada de ADN inválida, lanzando un error en ese caso.
