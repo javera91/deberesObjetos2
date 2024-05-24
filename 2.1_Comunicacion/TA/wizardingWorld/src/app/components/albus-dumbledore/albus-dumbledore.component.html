@@ -8,7 +8,7 @@
       </div>
       <div class="border">Hijo usando &#64;Output: <h3>{{ childMessageEventOutput }}</h3></div>
       <app-harry-potter [parentMessageInput]="parentMessageInput" (childMessageEventOutput)="receiveMessage($event)">
-        <div class="border">Padre usando &#64;ContentChild: <h3>Y ante cualquier peligro, recuerda llevar tu capa de invisibilidad. Te ayudará.</h3></div>
+        <div class="border">Padre usando &#64;ContentChild: <h3>Y ante cualquier peligro, recuerda llevar tu capa de invisibilidad (HTML escrito en el Padre). Te ayudará.</h3></div>
       </app-harry-potter>
   
     </nz-card>

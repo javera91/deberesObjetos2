@@ -26,7 +26,7 @@ export class AlbusDumbledoreComponent implements AfterViewInit, AfterContentInit
 
   ngAfterViewInit() {
     Promise.resolve().then(() => {
-      this.childComponent.parentMessageViewChild = 'Y recuerda Harry, si es que necesitas ayuda, pídela y se te dará.';
+      this.childComponent.parentMessageViewChild = 'Tras la muerte de Dumbledore, Harry enfrenta a Voldemort, y el alma de Dumbledore junta varitas con Harry.';
     });
   }
 
